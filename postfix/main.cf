@@ -18,7 +18,7 @@ biff = no
 append_dot_mydomain = no
 readme_directory = no
 enable_original_recipient = no
-message_size_limit = 102400000
+message_size_limit = MAX_MESSAGE_SIZE
 
 # ---------------------------------
 # SASL AND TLS parameters

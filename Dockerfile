@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -13,7 +13,8 @@ RUN apt-get install -y syslog-ng-core \
                        dovecot-imapd \
                        dovecot-lmtpd \
                        spamassassin \
-                       postfix-policyd-spf-python
+                       postfix-policyd-spf-python \
+                       opendkim opendkim-tools
 
 # add vmail user and group
 RUN groupadd -g 5000 vmail
